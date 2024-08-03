@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Simple Web Clock</title>
+   <meta http-equiv="refresh" content="1">
+   <link rel="stylesheet" href="{{ url_for('static', filename='clock.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='fonts.css') }}">
+</head>
+<body style="background-color: rgb(25, 17, 39);">
+    <div class="clock-header">
+        <p class="ch-txt">
+            SIMPLE WEB CLOCK
+        </p>
+        <p class="ch-txt1">
+            Develop a straightforward and user-friendly Simple Clock Web Application
+            that displays the current time in a clear and visually appealing manner. The
+            application aims to provide users with a minimalistic yet functional clock
+            interface that is accessible from web browsers.
+        </p>
+
+    </div>
+
+
+    <div class="clock">
+        <div class="box1">
+            <p class="hours">
+                {{ hours }}
+            </p>
+        </div>
+        <div class="colon">
+            <p class="colonn">:</p>
+        </div>
+        <div class="box3">
+            <p class="minutes">
+                {{ minutes }}
+            </p>
+        </div>
+        <div class="colon">
+            <p class="colonn">:</p>
+        </div>
+        <div class="box5">
+            <p class="seconds">
+                {{ seconds }}
+            </p>
+        </div>
+    </div>
+    <div class="name">
+        <p class="namee">
+            -----by Diwakar Puchhrat-----
+        </p>
+    </div>
+    
+</body>
+</html>
