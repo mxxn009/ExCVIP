@@ -1,5 +1,3 @@
-Certainly! Here’s a description you might use for your GitHub repository:
-
 ---
 
 ## Automated Email Sender Script
