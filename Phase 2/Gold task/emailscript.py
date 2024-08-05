@@ -27,7 +27,7 @@ def email_script():
 
 s = input('Would you like to schedule this email? (y/n): ')
 if s == 'y':
-    a = int(input('Enter time (HH:MM):\t'))
+    a = (input('Enter time (HH:MM):\t'))
     schedule.every().day.at(a).do(email_script)
 
     start_date = datetime.now()
